@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Kontak from './pages/Kontak';
+import Nav from './pages/Nav';
+import Sejarah from './pages/Sejarah';
+import Tentang from './pages/Tentang';
+import Home from './pages/Home';
+import Siswa from './pages/Siswa';
+import ListSiswa from './pages/ListSiswa';
+import Menu from './pages/Menu';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        
+        <Routes>
+          <Route path="/" element={<Home/>} exact />
+          <Route path="/kontak" element={<Kontak/>} />
+          <Route path="/sejarah" element={<Sejarah/>} />
+          <Route path="/tentang" element={<Tentang/>} />
+          <Route path="/siswa" element={<Siswa/>} />
+          <Route path="/dsiswa" element={<ListSiswa/>} />
+          <Route path="/menu" element={<Menu/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(233, 11, 11);
+}
+
+h1{
+    color: #fff;
+}
+
+.AppTitle {
+    background-color: rgb(255, 230, 0);
+    color: rgb(233, 11, 11);
+}
+
+.isi {
+    font-style: 20px;
+    color: rgb(255, 230, 0);
+}
+
+.caption{
+    font-size: 13px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.nav-link{
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: aliceblue;
+}
+
+.tabelMenu {
+    text-align: left;
+}
+
+.tal{
+    text-align: left;
+}
